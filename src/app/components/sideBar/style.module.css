@@ -1,5 +1,5 @@
 .sidebar {
-    padding: 10px 40px 40px 40px;
+    /* padding: 10px 40px 40px 40px; */
   }
   .sidebar .logo {
     text-align: center;
@@ -16,6 +16,10 @@
     align-items: center;
     position: relative;
     border-radius: 12px;
+
+    /* border-width: 1px; Adjust the border width as needed
+    border-image: linear-gradient(to right, #ff0000, #0000ff);
+    border-image-slice: 1; */
   }
   .sidebar .cards.active,
   .sidebar .cards:hover {
@@ -25,7 +29,18 @@
     background-color: transparent;
   }
   .sidebar .cards:before {
-    display: none;
+    /* display: none; */
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 1px;
+    background: linear-gradient(45deg, rgba(219, 0, 255, 0.2), rgba(92, 107, 248, 0.2));
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
   }
   .sidebar .cards .imageblock {
     width: 80px;
@@ -53,12 +68,7 @@
     line-height: normal;
     padding: 18px 0;
   }
-  .sidebar ul.activeList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .sidebar ul.activeList li {
+  .sidebar div.activeList div {
     padding: 10px 20px;
     background: #242427;
     display: flex;
@@ -66,19 +76,23 @@
     position: relative;
     justify-content: flex-end;
     border-radius: 10px;
+    margin-bottom: 10px;
   }
-  .sidebar ul.activeList li:before {
+  .sidebar div.activeList div:before {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: 10px;
     padding: 1px;
     background: linear-gradient(45deg, rgba(219, 0, 255, 0.2), rgba(92, 107, 248, 0.2));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
+    /* margin-bottom: 10px; */
   }
-  .sidebar ul.activeList li .title {
+  .sidebar div.activeList div .title {
     color: #fff;
     font-size: 16px;
     font-style: normal;
@@ -86,23 +100,22 @@
     margin: 0;
     padding-right: 15px;
   }
-  .sidebar ul.activeList li span {
+  .sidebar div.activeList div span {
     width: 46px;
     height: 46px;
     border-radius: 50%;
   }
-  .sidebar ul.activeList li span img {
+  .sidebar div.activeList div span img {
     object-fit: cover;
   }
-  .sidebar ul.activeList li span:before {
+  .sidebar div.activeList div span:before {
     content: "";
     display: block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 45px;
     background-color: #03e36a;
   }
   

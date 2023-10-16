@@ -19,66 +19,89 @@ const SideBar = () => {
   //   typeof window !== "undefined" ? window.location.pathname : "/home";
   const menuItems = [
     {
-      title: "Home",
-      icon: homeIcon,
-      path: "/",
+      a: {
+        title: "Home",
+        icon: homeIcon,
+        path: "/",
+      },
+      b: {
+        title: "Orders",
+        icon: categoryIcon,
+        path: "/orders",
+      },
     },
     {
-      title: "Orders",
-      icon: categoryIcon,
-      path: "/orders",
+      a: {
+        title: "Profile",
+        icon: profileIcon,
+        path: "/gig",
+      },
+      b: {
+        title: "Wallet",
+        icon: checkoutIcon,
+        path: "/wallet",
+      },
     },
     {
-      title: "Profile",
-      icon: profileIcon,
-      path: "/gig",
-    },
-    {
-      title: "Wallet",
-      icon: checkoutIcon,
-      path: "/wallet",
-    },
-    {
-      title: "Boost",
-      icon: settingIcon,
-      path: "/boost-gig",
-    },
-    {
-      title: "Community",
-      icon: supportIcon,
-      path: "/community",
-    },
+      a: {
+        title: "Boost",
+        icon: settingIcon,
+        path: "/boost-gig",
+      },
+      b: {
+        title: "Community",
+        icon: supportIcon,
+        path: "/community",
+      },
+    }
   ];
   return (
-    <div className={style.sidebar + ' border border-red-800'}>
-      <div className={style.logo}>
+    <div className={style.sidebar + ' border border-red-800 w-5/6'}>
+      <div className={style.logo + ' py-6 flex justify-center'}>
         <Image src={Logo} alt="Logo" className="img-fluid" />
       </div>
+
       <div className="mt-4" gutter={20}>
         {menuItems.map((menuItem, idx) => (
-          <div key={idx} span={12} className="mb-2">
+          <div key={idx} span={12} className="pb-2 flex flex-row justify-between">
             <Link
-              href={menuItem?.path}
-              className={`card ${style.cards} `}
+              href={menuItem?.a.path}
+              className={`${style.cards} `}
             >
               <div className={style.imageblock}>
                 <Image
-                  src={menuItem.icon}
-                  alt={menuItem.title}
+                  src={menuItem.a.icon}
+                  alt={menuItem.a.title}
                   className="img-fluid"
                 />
               </div>
-              <h3>{menuItem.title}</h3>
+              <h3 className="pt-3">{menuItem.a.title}</h3>
             </Link>
+            {menuItem.b ? 
+              <Link
+              href={menuItem?.b.path}
+              className={`card ${style.cards} `}
+              >
+                <div className={style.imageblock}>
+                  <Image
+                    src={menuItem.b.icon}
+                    alt={menuItem.b.title}
+                    className="img-fluid"
+                  />
+                </div>
+                <h3 className="pt-3">{menuItem.b.title}</h3>
+              </Link>
+            : ' '}
           </div>
         ))}{" "}
-        <div span={24} className="mb-2">
+
+        <div>
           <h2>Active People</h2>
         </div>
-        <div span={24} className="mb-2">
-          <ul className={style.activeList}>
-            {[1, 2, 3].map((item, idx) => (
-              <li key={idx} className="mb-2">
+        <div className="mb-2">
+          <div className={style.activeList + ' py-2'}>
+            {[1, 2, 3].map((idx) => (
+              <div key={idx} className="">
                 <h4 className={style.title}>Nadia Alie_09</h4>
                 <span>
                   <Image
@@ -87,9 +110,9 @@ const SideBar = () => {
                     className="img-fluid"
                   />
                 </span>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </div>

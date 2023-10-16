@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className + ' flex gap-4 backgroundIMG'}>
-        <div className="mainBody w-10/12 p-6 border border-white">
+        <div className="mainBody w-9/12 2xl:w-4/5 p-6">
           {children}
         </div>
-        <div className="sideBar w-1/5 py-6 border border-white">
+        <div className="sideBar w-3/12 2xl:w-1/5 py-6">
           <SideBar />
         </div>
       </body>
