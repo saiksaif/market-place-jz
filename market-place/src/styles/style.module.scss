@@ -1,0 +1,38 @@
+@import "../assets/fonts/fonts.scss";
+
+.home {
+    background-image: url("../assets/images/background.svg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 40px 20px 100px 30px !important;
+  
+    :global(.ant-layout) {
+        background: transparent !important;
+        :global(.ant-layout-header) {
+            padding: 0;
+            background: transparent !important;
+        }
+        :global(.ant-layout-footer) {
+            padding: 0;
+            background: transparent !important;
+        }
+        :global(.ant-layout-sider) {
+            padding: 0;
+            background: transparent !important;
+        }
+    }
+    :global(.ant-layout-sider) {
+        @media (max-width: 991px) {
+            display: none;
+        }
+        &.CustomSider {
+            flex: 0 0 355px !important;
+            max-width: 355px !important;
+            min-width: 355px !important;
+            width: 355px !important;
+        }
+    }
+    :global(.ant-layout-header) {
+        height: auto;
+    }
+}

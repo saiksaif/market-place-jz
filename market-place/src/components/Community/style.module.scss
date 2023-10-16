@@ -1,0 +1,125 @@
+.communityContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 27px;
+
+    .title {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #ffffff;
+        margin: 0px;
+    }
+
+    .registerBtn {
+        &:global(.ant-btn) {
+            padding: 16px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            background: -webkit-linear-gradient(88deg, #bf43d3 -22.64%, #7000ff 98.45%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border: 0px solid;
+            height: auto;
+        }
+    }
+
+    .signInBtn {
+        &:global(.ant-btn) {
+            position: relative;
+            margin-left: 20px;
+            &:before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 10px;
+                padding: 1px;
+                background: linear-gradient(45deg, rgba(219, 0, 255, 0.36), rgba(92, 107, 248, 0.36));
+                -webkit-mask:
+                    linear-gradient(#fff 0 0) content-box,
+                    linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+            }
+        }
+    }
+}
+
+.communityMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 65px 0px;
+
+    .emmptyBtn {
+        padding: 16px;
+        background: linear-gradient(88deg, #bf43d3 -22.64%, #7000ff 98.45%);
+        width: 138px;
+        border: 0px;
+        margin-right: 130px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 131.687%;
+        color: #464957;
+        margin-bottom: 0px;
+    }
+}
+
+.communityListContainer {
+    padding: 50px;
+    background: #1b1b1d;
+
+    .communityListInnerContainer {
+        border-bottom: 1px solid #464957;
+        margin-bottom: 48px;
+
+        .nameStyle {
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 169.688%;
+            color: #ffffff;
+            margin: 0px;
+        }
+
+        .timeStyle {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: #d1d1f0;
+            margin: 0px;
+
+            :global(.anticon) {
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+        .communityDesStyle {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 163.187%;
+            color: #ffffff;
+            margin: 0px;
+            text-align: right;
+            margin-top: 40px;
+            margin-bottom: 48px;
+        }
+    }
+}

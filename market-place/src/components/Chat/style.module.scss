@@ -1,0 +1,297 @@
+.chatContainer {
+    padding-top: 53px;
+
+    .profileOverViewContainer {
+        padding: 26px 16px;
+        border-radius: 10px;
+        background: #1F2023;
+        height: 100%;
+
+        .profilePic {
+            margin-left: 56px;
+        }
+
+        .profileName {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+        }
+
+        .profileRole {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 159.687%;
+            color: #D1D1F0;
+            margin-bottom: 25px;
+        }
+
+        .profileOrder {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 152%;
+            color: #FFFFFF;
+            margin-top: 25px;
+            margin-bottom: 30px;
+
+            span {
+                color: #D1D1F0;
+            }
+        }
+
+        .profileStatusContainer {
+            padding: 16px;
+            border-radius: 10px;
+            background: #2C2C34;
+            display: flex;
+            align-items: center;
+
+            .statusTitle {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                color: #73A2FF;
+                margin-bottom: 16px;
+                margin-left: 20px;
+            }
+
+            .statusDate {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                color: #FFFFFF;
+                margin-bottom: 0px;
+                margin-left: 20px;
+            }
+        }
+
+        .profileAbout {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 152%;
+            color: #FFFFFF;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .profileRate {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 152%;
+            color: #FFFFFF;
+            margin: 0px;
+            margin-bottom: 25px;
+
+            :global(.anticon) {
+                color: #ED8A19;
+            }
+
+            span {
+                color: #D1D1F0;
+            }
+        }
+    }
+
+    .chatHeaderContainer {
+        padding: 10px 17px;
+        border-radius: 10px;
+        background: #1F2023;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        :global(.anticon) {
+            svg {
+                color: #FFFFFF;
+            }
+        }
+
+
+        .profileName {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+            text-align: right;
+        }
+
+        .profileRole {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 159.687%;
+            color: #D1D1F0;
+            margin-bottom: 0px;
+            text-align: right;
+        }
+    }
+
+    .chatStyleContainer {
+        margin-bottom: 54px;
+        display: flex;
+
+        .chatInnerContainer {
+            width: max-content;
+
+            .chatStyle {
+                width: max-content;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .chatBox {
+                    padding: 16px;
+                    border-radius: 0px 10px 10px 10px;
+                    background: #2C2D32;
+                    max-width: 300px;
+                    width: 100%;
+
+                    .chatName {
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        color: #FFFFFF;
+                        margin-bottom: 10px;
+                    }
+
+                    .chatMessage {
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 159.687%;
+                        margin-bottom: 0px;
+                        color: #5C5C68;
+                    }
+
+                    &.sendBox {
+                        border-radius: 10px 10px 0px 10px;
+                        background: #D1D1F0;
+
+                        .chatName {
+                            color: #0A0A0A;
+                        }
+
+                        .chatMessage {
+                            color: #2C2D32;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .timeStyle {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0px;
+            margin-top: 16px;
+            color: #5C5C68;
+            text-align: right;
+        }
+    }
+
+    .chatContainer {
+        padding: 60px 33px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #1B1B1D 0%, #232427 100%);
+        margin-top: 16px;
+
+        .chatInputContainer {
+            display: flex;
+            align-items: center;
+
+            .slash {
+                color: #C7C7D6;
+                padding: 0px 16px;
+                font-size: 20px;
+                margin: 0px;
+            }
+
+            :global(.ant-input) {
+                background-color: #0A0A0A;
+                border-radius: 10px;
+                border: 0px solid;
+                margin: 0px 20px;
+                height: 60px;
+                color: #FFFFFF;
+                padding: 0px 20px;
+            }
+        }
+    }
+
+    .AllConversationContainer {
+        padding: 23px 30px;
+        border-radius: 10px;
+        background: #464957;
+
+        .conversationStyle {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 131.687%;
+            color: #FFFFFF;
+            margin: 0px;
+            cursor: pointer;
+
+            span {
+                color: #D1D1F0;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .conversationContainer {
+        padding: 10px 30px;
+        border-radius: 10px;
+        background: #0A0A0A;
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+
+        .timeStyle {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 159.687%;
+            color: #D1D1F0;
+        }
+
+        .nameStyle {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: #FFFFFF;
+            text-align: right;
+            margin-bottom: 5px;
+            margin-right: 16px;
+        }
+
+        .desStyle {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 169.688%;
+            color: #D1D1F0;
+            text-align: right;
+            margin: 0px;
+            margin-right: 16px;
+
+        }
+    }
+}

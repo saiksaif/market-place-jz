@@ -1,0 +1,105 @@
+.mainFooter {
+    .topFooter {
+        .footerMenu {
+            padding: 0 15px;
+            .title {
+                color: #fff;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                margin-bottom: 30px;
+                margin-top: 0;
+                text-align: right;
+                @media (max-width: 991px) {
+                    font-size: 18px;
+                }
+                @media (max-width: 1200px) {
+                    font-size: 20px;
+                }
+            }
+            :global(.ant-menu) {
+                background-color: transparent;
+                color: #91919e;
+                gap: 20px;
+                display: flex;
+                flex-direction: column;
+                &::before {
+                    display: none;
+                }
+                :global(.ant-menu-item) {
+                    color: #91919e;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    padding: 0;
+                    margin: 0;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+                    :global(.ant-menu-title-content) {
+                    }
+                    &:after {
+                        display: none;
+                    }
+                    &:hover {
+                        color: #fff;
+                        background: transparent;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    @media (max-width: 1200px) {
+                        font-size: 18px;
+                    }
+
+                    @media (max-width: 991px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .bottomFooter {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid #202042;
+        img {
+            width: 15px;
+            height: 15px;
+        }
+        h2 {
+            color: #fff;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+        }
+        p {
+            color: #91919e;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        h4 {
+            color: #91919e;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin: 0;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,417 @@
+.gigMainContainer {
+    margin-top: 42px;
+
+    .gigHeadContainer {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 18px;
+
+        .title {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 169.688%;
+            margin: 0px;
+            color: #FFFFFF;
+            margin-right: 20px;
+        }
+    }
+
+    .ratingContainer {
+        .topRatingContainer {
+            background-image: url('../../assets//images//thumbnill.png');
+            background-size: cover;
+            background-position: center;
+            height: 340px;
+            border-radius: 12.255px 12.255px 0px 0px;
+            padding: 24px 22px;
+            width: 100%;
+
+            .btnContainer {
+                text-align: end;
+
+                :global(.ant-btn) {
+
+                    border-radius: 10px;
+                    padding: 8px 16px;
+                    background: linear-gradient(100deg, #9B7DD6 -1.84%, #365FAF 117.07%);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 152%;
+                    color: #FFFFFF;
+                    height: auto;
+                    border: 0px;
+                }
+            }
+        }
+
+        .topRatedUserContainer {
+            background-color: #1B1B1D;
+            padding: 50px;
+            border-radius: 10px;
+            margin: 0px 22px;
+            position: relative;
+            bottom: 125px;
+            display: flex;
+
+            .topRatedUser {
+                width: 80%;
+                text-align: end;
+                padding-right: 30px;
+
+                .userName {
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    color: #FFFFFF;
+                    margin: 0px;
+                }
+
+                .userSkill {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 159.687%;
+                    color: #D1D1F0;
+                }
+
+                .userMail {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 159.687%;
+                    color: #F1EEF6;
+                    margin-bottom: 40px;
+
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+
+                .userBtn {
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    border: 1px solid #FFFFFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 159.687%;
+                    color: #FFFFFF;
+                    background: transparent;
+                    margin-left: 16px;
+                    height: auto;
+
+                    &:nth-child(2) {
+                        background: linear-gradient(88deg, #BF43D3 -22.64%, #7000FF 98.45%);
+                        border: none;
+                    }
+                }
+            }
+
+        }
+
+        .userReportContainer {
+            background: #1B1B1D;
+            padding: 50px;
+            border-radius: 10px;
+            margin-top: -60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .reportTitle {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 131.687%;
+                color: #FFFFFF;
+                text-align: right;
+            }
+
+            .reportValue {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 169.688%;
+                color: #464957;
+                text-align: right;
+
+            }
+        }
+
+        .userDetailContainer {
+            background: #1B1B1D;
+            border-radius: 10px;
+            padding: 50px;
+
+            .userData {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 152%;
+                color: #FFFFFF;
+                margin-left: 25px;
+                margin-bottom: 32px;
+            }
+
+            .userLabel {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 152%;
+                color: #D1D1F0;
+                text-align: right;
+                margin-bottom: 32px;
+
+            }
+
+            .ratingStar {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 5px;
+                margin-bottom: 20px;
+
+                :global(.anticon) {
+                    color: #ED8A19;
+                }
+
+                .rating {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 30px;
+                    margin: 0px;
+                    color: #ED8A19;
+                    margin-right: 5px;
+                }
+
+                .ratingValue {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin: 0px;
+                    color: #FFFFFF;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .gigsContainer {
+        background: #1B1B1D;
+        border-radius: 10px;
+        padding: 50px;
+        margin-top: 47px;
+
+        .title {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: #FFFFFF;
+            text-align: right;
+            margin: 0px;
+        }
+
+        :global(.img-fluid) {
+            width: 100%;
+        }
+
+        .gigDes {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: #FFFFFF;
+            text-align: right;
+            margin-top: 30px;
+        }
+
+        .gigCardpagination {
+            text-align: center;
+            margin-top: 50px;
+
+            :global(.ant-pagination) {
+                li {
+                    padding: 15px 20px;
+                    font-weight: 600;
+                    background-color: #1b1b1d;
+                    border-color: #2c2d32;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    color: #fff;
+                    height: auto;
+                }
+
+                :global(.ant-pagination-prev),
+                :global(.ant-pagination-next) {
+                    color: #fff;
+                    height: auto;
+                    padding: 15px 17px;
+
+                    button {
+                        display: flex;
+                        padding: 5px;
+                    }
+
+                    svg {
+                        fill: #fff;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                :global(.ant-pagination-options) {
+                    display: none;
+                }
+
+                :global(.ant-pagination-jump-next) {
+                    :global(.anticon) {
+                        opacity: 1;
+                    }
+
+                    svg {
+                        fill: #fff;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .reviewContainer {
+        background: #1B1B1D;
+        border-radius: 10px;
+        padding: 50px;
+        margin-top: 47px;
+        margin-bottom: 50px;
+
+        .title {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: #FFFFFF;
+            text-align: right;
+            margin-bottom: 40px;
+        }
+
+        .userName {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: right;
+            color: #FFFFFF;
+        }
+
+        .userCity {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 159.687%;
+            margin: 0px;
+            text-align: right;
+            color: #D1D1F0;
+        }
+
+        .reviewRating {
+            background-color: #2C2D32;
+            border-radius: 10px;
+            padding: 30px 58px;
+            margin-top: 16px;
+            margin-bottom: 60px;
+
+            .reviewTime {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: #464957;
+                margin: 0px;
+            }
+
+            .ratingStar {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 5px;
+                margin-bottom: 20px;
+
+                :global(.anticon) {
+                    color: #ED8A19;
+                }
+
+                .rating {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 30px;
+                    margin: 0px;
+                    color: #ED8A19;
+                }
+
+            }
+
+            .reviewDescription {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                color: #D1D1F0;
+                text-align: right;
+            }
+        }
+
+        .commitTitle {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 131.687%;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+            text-align: right;
+        }
+
+        .textAreaStyle {
+            background: transparent;
+            padding: 30px 32px;
+            border: 1px solid #5C5C68;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 152%;
+
+            &::placeholder {
+                color: #5C5C68;
+            }
+        }
+
+        .submitBtn {
+            padding: 20px 32px;
+            border-radius: 10px;
+            background: linear-gradient(88deg, #BF43D3 -22.64%, #7000FF 98.45%);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: #FFFFFF;
+            height: auto;
+            border: 0px;
+            margin-top: 50px;
+            &:hover{
+                color: #FFFFFF;
+
+            }
+        }
+
+    }
+}

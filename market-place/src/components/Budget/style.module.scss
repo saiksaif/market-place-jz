@@ -1,0 +1,163 @@
+.budgetContainer {
+    padding-top: 84px;
+    padding-bottom: 66px;
+
+    .budgetInnerContainer {
+        padding: 50px;
+        background-color: #1B1B1D;
+        max-width: 840px;
+        width: 100%;
+        margin: auto;
+
+        .title {
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 146.187%;
+            color: #FFFFFF;
+            text-align: right;
+            margin: 0px;
+        }
+
+        .description {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 131.687%;
+            color: #D1D1F0;
+            text-align: right;
+            margin-bottom: 50px;
+
+            span {
+                color: #7510F5;
+            }
+        }
+
+        .subTitle {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: #FFFFFF;
+            text-align: right;
+            margin-bottom: 60px;
+        }
+
+        .formBlock {
+
+            :global(.ant-form-item) {
+                text-align: right;
+
+                :global(.ant-form-item-control) {
+                    :global(.ant-input) {
+                        padding: 20px;
+                        text-align: right;
+                        border: 0.5px solid transparent;
+                        border-radius: 10px;
+                        background-image: linear-gradient(#1B1B1D, #1B1B1D),
+                            linear-gradient(90deg, rgba(219, 0, 255, 0.36), rgba(92, 107, 248, 0.36));
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
+                        background-color: transparent;
+                        line-height: 31.94px;
+                        color: #d1d1f0;
+
+                        &::placeholder {
+                            color: #464957;
+                            text-align: right;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 159.687%;
+                        }
+
+                        &:focus {
+                            box-shadow: unset;
+                        }
+                    }
+                }
+
+                :global(.ant-select) {
+                    :global(.ant-select-selector) {
+                        padding: 24px 30px;
+                        text-align: right;
+                        border: 0.5px solid transparent;
+                        border-radius: 10px;
+                        background-image: linear-gradient(#1B1B1D, #1B1B1D),
+                            linear-gradient(90deg, rgba(219, 0, 255, 0.36), rgba(92, 107, 248, 0.36));
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
+                        background-color: transparent;
+                        line-height: 31.94px;
+                        color: #d1d1f0;
+                        min-height: 82px;
+
+                        :global(.ant-select-selection-placeholder) {
+                            color: #464957;
+                            text-align: right;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 159.687%;
+                        }
+                    }
+                }
+
+                label {
+                    color: #D1D1F0;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 159.687%;
+                    margin-bottom: 10px;
+                    text-align: right;
+                    float: right;
+
+                    &::after,
+                    &:before {
+                        display: none !important;
+                    }
+                }
+
+                .costStyle {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    color: #7510F5;
+                    padding-top: 16px;
+                    margin: 0px;
+                }
+
+                :global(.ant-form-item-explain-error) {
+                    color: #b40404;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-top: 8px;
+                }
+            }
+
+            :global(.ant-btn) {
+                padding: 16px 32px;
+                border-radius: 10px;
+                background: linear-gradient(88deg, #bf43d3 -22.64%, #7000ff 98.45%);
+                height: auto;
+                width: 100%;
+                border: 1px solid transparent;
+                color: #fff;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                &:hover {
+                    border: 1px solid transparent !important;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}

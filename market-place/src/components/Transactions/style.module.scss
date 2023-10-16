@@ -1,0 +1,407 @@
+.transactionsContainer {
+    padding-top: 45px;
+
+    .balanceContainer {
+        padding: 40px;
+        background-color: #1b1b1d;
+        border-radius: 10px;
+
+        .balanceStyle {
+            padding: 46px;
+            border-radius: 10px;
+            background-image: url("../../assets/images/balancebg.png");
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 40px;
+
+            .title {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 142.188%;
+                text-align: center;
+                color: #d1d1f0;
+                margin-bottom: 40px;
+            }
+
+            .totalAmount {
+                color: #ffffff;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            .amountContainer {
+                display: flex;
+                align-items: center;
+                gap: 80px;
+
+                .amount {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 152%;
+                    margin-bottom: 0px;
+                    color: #d1d1f0;
+                }
+            }
+        }
+
+        .IconsContainer {
+            .iconCard {
+                padding: 21px;
+                min-width: 140px;
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid #464957;
+                text-align: center;
+
+                .title {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 159.687%;
+                    margin: 0px;
+                    text-align: center;
+                    color: #d1d1f0;
+                    padding-top: 16px;
+                }
+            }
+        }
+
+        .balanceTransferContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 60px;
+            margin-bottom: 40px;
+
+            h1 {
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                color: #ffffff;
+                text-align: right;
+                line-height: normal;
+                margin-bottom: 16px;
+            }
+
+            h2 {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 159.687%;
+                text-align: right;
+                margin: 0px;
+                color: #d1d1f0;
+            }
+        }
+
+        .avatarContainer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .bankContainer {
+            h1 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 152%;
+                text-align: right;
+                margin-bottom: 10px;
+                color: #d1d1f0;
+            }
+
+            .bankNumer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 19px 28px;
+                border-radius: 10px;
+                background-color: #0a0a0a;
+                border: 1px solid #464957;
+
+                .numberStyle {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 152%;
+                    text-align: right;
+                    color: #ffffff;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+    .withdrawContainer {
+        padding: 40px;
+        background-color: #1b1b1d;
+        border-radius: 10px;
+
+        .tabContainter {
+            margin-bottom: 40px;
+
+            :global(.ant-tabs) {
+                :global(.ant-tabs-nav) {
+                    &::before {
+                        border-bottom: 0px;
+                    }
+                }
+
+                :global(.ant-tabs-nav-wrap) {
+                    display: flex;
+                    justify-content: center;
+
+                    :global(.ant-tabs-tab) {
+                        padding: 20px 71px;
+                        border: 1px solid #464957;
+                        margin: 0px;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        color: #ffffff;
+
+                        &:global(.ant-tabs-tab-active) {
+                            background-color: #7510f5;
+
+                            :global(.ant-tabs-tab-btn) {
+                                color: #ffffff;
+                            }
+                        }
+
+                        &:nth-child(1) {
+                            border-radius: 10px 0px 0px 10px;
+                        }
+
+                        &:nth-child(3) {
+                            border-radius: 0px 10px 10px 0px;
+                        }
+                    }
+                }
+
+                :global(.ant-tabs-ink-bar) {
+                    background: transparent;
+                }
+            }
+        }
+
+        .formBlock {
+            :global(.ant-form-item) {
+                text-align: right;
+
+                :global(.ant-form-item-control) {
+                    :global(.ant-input) {
+                        padding: 20px;
+                        text-align: right;
+                        border: 0.5px solid transparent;
+                        border-radius: 10px;
+                        background-image: linear-gradient(#0a0a0a, #0a0a0a),
+                            linear-gradient(90deg, rgba(219, 0, 255, 0.36), rgba(92, 107, 248, 0.36));
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
+                        background-color: transparent;
+                        line-height: 31.94px;
+                        color: #ffffff;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 159.687%;
+
+                        &::placeholder {
+                            color: #ffffff;
+                            text-align: right;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 159.687%;
+                        }
+
+                        &:focus {
+                            box-shadow: unset;
+                        }
+                    }
+                }
+
+                label {
+                    color: #ffffff;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 152%;
+                    margin-bottom: 10px;
+                    text-align: right;
+                    float: right;
+
+                    &::after,
+                    &:before {
+                        display: none !important;
+                    }
+                }
+
+                .inpputTitle {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 159.687%;
+                    color: #d1d1f0;
+                    margin: 0px;
+                    margin-top: 8px;
+                }
+
+                :global(.ant-form-item-explain-error) {
+                    color: #b40404;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-top: 8px;
+                }
+            }
+
+            .totalAmountContainer {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 35px;
+                margin-bottom: 50px;
+
+                .amountStyle {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 152%;
+                    margin: 0px;
+                    color: #d1d1f0;
+
+                    span {
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 131.687%;
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .dividerStyle {
+                border-top: 1px solid #464957;
+                height: 40px;
+
+                h1 {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 152%;
+                    margin: 0px;
+                    color: #ffffff;
+                    background-color: #1b1b1d;
+                    width: max-content;
+                    position: relative;
+                    padding: 0px 10px;
+                    top: -16px;
+                    left: 235px;
+                }
+            }
+
+            .atmContainer {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                flex-wrap: wrap;
+                justify-content: end;
+                margin-bottom: 16px;
+
+                img {
+                    margin-bottom: 34px;
+                }
+            }
+
+            :global(.ant-btn) {
+                padding: 16px 32px;
+                border-radius: 10px;
+                background: linear-gradient(88deg, #bf43d3 -22.64%, #7000ff 98.45%);
+                height: auto;
+                width: 100%;
+                border: 1px solid transparent;
+                color: #fff;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                &:hover {
+                    border: 1px solid transparent !important;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+
+    .transactionsHistoryContainer {
+        margin-top: 100px;
+        padding: 40px;
+        border-radius: 18px;
+        background: #1b1b1d;
+
+        .title {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: #ffffff;
+            text-align: right;
+            margin-bottom: 16px;
+        }
+
+        .descStyle {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 159.687%;
+            text-align: right;
+            color: #d1d1f0;
+            margin-bottom: 50px;
+        }
+
+        .historyTable {
+            overflow: auto;
+
+            .historyStyle {
+                padding: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                white-space: nowrap;
+                gap: 15px;
+                flex-wrap: nowrap;
+
+                .commonItemStyle {
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 163.187%;
+                    color: #ffffff;
+                    margin: 0px;
+                }
+
+                :global(.anticon > svg) {
+                    margin-right: 16px;
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+        }
+    }
+}
