@@ -1,5 +1,6 @@
 import './styles/globals.css'
 import { Inter } from 'next/font/google'
+import HeaderSection from './components/Header/Header'
 import SideBar from './components/sideBar/Sider'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,7 +15,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className + ' flex gap-4 backgroundIMG'}>
         <div className="mainBody w-9/12 2xl:w-4/5 p-6">
+          <header>
+            <HeaderSection />
+          </header>
+          
           {children}
+          
+          <footer>
+
+          </footer>
         </div>
         <div className="sideBar w-3/12 2xl:w-1/5 py-6">
           <SideBar />
