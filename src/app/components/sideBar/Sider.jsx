@@ -56,7 +56,7 @@ const SideBar = () => {
     }
   ];
   return (
-    <div className={style.sidebar + ' border border-red-800 w-5/6'}>
+    <div className={style.sidebar + ' w-5/6'}>
       <div className={style.logo + ' py-6 flex justify-center'}>
         <Image src={Logo} alt="Logo" className="img-fluid" />
       </div>
@@ -99,9 +99,9 @@ const SideBar = () => {
           <h2>Active People</h2>
         </div>
         <div className="mb-2">
-          <div className={style.activeList + ' py-2'}>
+          <div className={style.activeList + ' py-2 flex flex-col gap-2'}>
             {[1, 2, 3].map((idx) => (
-              <div key={idx} className="">
+              <div key={idx} className="mb-2">
                 <h4 className={style.title}>Nadia Alie_09</h4>
                 <span>
                   <Image

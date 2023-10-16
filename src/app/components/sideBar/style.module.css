@@ -1,121 +1,135 @@
-.sidebar {
-    /* padding: 10px 40px 40px 40px; */
-  }
-  .sidebar .logo {
-    text-align: center;
-  }
-  .sidebar .logo img {
-    width: 80%;
-  }
-  .sidebar .cards {
-    cursor: pointer;
-    padding: 16px 25px;
-    background: #242427;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    border-radius: 12px;
+/* .sidebar { */
+/* padding: 10px 40px 40px 40px; */
+/* } */
+.sidebar .logo {
+  text-align: center;
+}
 
-    /* border-width: 1px; Adjust the border width as needed
+.sidebar .logo img {
+  width: 80%;
+}
+
+.sidebar .cards {
+  cursor: pointer;
+  padding: 16px 25px;
+  background: #242427;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 12px;
+
+  /* border-width: 1px; Adjust the border width as needed
     border-image: linear-gradient(to right, #ff0000, #0000ff);
     border-image-slice: 1; */
-  }
-  .sidebar .cards.active,
-  .sidebar .cards:hover {
-    background-image: linear-gradient(90deg, rgba(92, 107, 248, 0.2), rgba(219, 0, 255, 1)), linear-gradient(rgba(46, 63, 218, 0.36) 0%, rgba(205, 20, 235, 0.36) 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    background-color: transparent;
-  }
-  .sidebar .cards:before {
-    /* display: none; */
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 10px;
-    padding: 1px;
-    background: linear-gradient(45deg, rgba(219, 0, 255, 0.2), rgba(92, 107, 248, 0.2));
-    -webkit-mask:
-      linear-gradient(#fff 0 0) content-box,
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-  }
-  .sidebar .cards .imageblock {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
-  .sidebar .cards h3 {
-    color: #C7C7D6;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 15px;
-    margin: 10px 0 0 0;
-  }
-  .sidebar h2 {
-    border-radius: 10px;
-    border: 1px solid transparent;
-    background: linear-gradient(88deg, #7c1a8c -62.58%, #491190 101.53%);
-    text-align: center;
-    margin: 0;
-    color: #fff;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding: 18px 0;
-  }
-  .sidebar div.activeList div {
-    padding: 10px 20px;
-    background: #242427;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: flex-end;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  .sidebar div.activeList div:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 10px;
-    padding: 1px;
-    background: linear-gradient(45deg, rgba(219, 0, 255, 0.2), rgba(92, 107, 248, 0.2));
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    /* margin-bottom: 10px; */
-  }
-  .sidebar div.activeList div .title {
-    color: #fff;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    margin: 0;
-    padding-right: 15px;
-  }
-  .sidebar div.activeList div span {
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-  }
-  .sidebar div.activeList div span img {
-    object-fit: cover;
-  }
-  .sidebar div.activeList div span:before {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: absolute;
-    top: 45px;
-    background-color: #03e36a;
-  }
-  
+}
+
+.sidebar .cards.active,
+.sidebar .cards:hover {
+  background-image: linear-gradient(90deg, rgba(92, 107, 248, 0.2), rgba(219, 0, 255, 1)), linear-gradient(rgba(46, 63, 218, 0.36) 0%, rgba(205, 20, 235, 0.36) 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-color: transparent;
+}
+
+.sidebar .cards:before {
+  /* display: none; */
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 1px;
+  background: linear-gradient(45deg, rgba(219, 0, 255, 0.2), rgba(92, 107, 248, 0.2));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.sidebar .cards .imageblock {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.sidebar .cards h3 {
+  color: #C7C7D6;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  margin: 10px 0 0 0;
+}
+
+.sidebar h2 {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(88deg, #7c1a8c -62.58%, #491190 101.53%);
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 18px 0;
+}
+
+/* .sidebar div.activeList {
+
+  } */
+.sidebar div.activeList div {
+  padding: 10px 20px;
+  background: #242427;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+
+.sidebar div.activeList div:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 1px;
+  background: linear-gradient(45deg, rgba(219, 0, 255, 0.2), rgba(92, 107, 248, 0.2));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  /* margin-bottom: 10px; */
+}
+
+.sidebar div.activeList div .title {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding-right: 15px;
+}
+
+.sidebar div.activeList div span {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.sidebar div.activeList div span img {
+  object-fit: cover;
+}
+
+.sidebar div.activeList div span:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  background-color: #03e36a;
+}
